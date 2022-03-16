@@ -1,14 +1,13 @@
 import React from "react";
+import Banner from "../components/Banner";
 import Navbar from "../components/Navbar";
 
 function Home() {
   return (
     <main className="">
-      {/* Nav */}
       <Navbar />
-      {/* Banner */}
+      <Banner />
       {/* Row */}
-      <h1>Home</h1>
     </main>
   );
 }
