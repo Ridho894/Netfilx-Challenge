@@ -17,23 +17,16 @@ function Navbar() {
     <header
       className={`fixed ${
         show && "bg-dark"
-      } top-0 p-5 w-full h-[70px] z-10 animations`}
+      } top-0 w-full h-[70px] z-10 animations`}
     >
-      <div className="flex justify-between">
-        {/* Dark */}
-        {/* <img
-          className="fixed left-0 w-20 object-contain pl-5 cursor-pointer"
-          src="https://variety.com/wp-content/uploads/2020/05/netflix-logo.png?w=1024"
-          alt=".img"
-        /> */}
-        {/* Light */}
+      <div className="flex justify-between py-4 max-w-7xl mx-auto">
         <img
-          className="fixed left-0 top-5 w-20 object-contain pl-5 cursor-pointer"
+          className="w-20 object-contain cursor-pointer"
           src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
           alt=".img"
         />
         <img
-          className="fixed right-5 w-7 cursor-pointer"
+          className="w-10 h-10 cursor-pointer"
           src="https://cdn-icons-png.flaticon.com/512/197/197559.png"
           alt=".img"
         />

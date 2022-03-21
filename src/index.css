@@ -7,6 +7,6 @@
     @apply ease-in transition-all duration-200;
   }
   .btn {
-    @apply cursor-pointer text-white outline-none bg-none rounded-sm px-8 mr-4 py-2 bg-stone-800 bg-opacity-80 hover:text-black hover:bg-white transition-all duration-200;
+    @apply cursor-pointer text-white outline-none bg-none rounded-sm px-8 mr-4 py-2 bg-stone-800 bg-opacity-90 hover:text-black hover:bg-white transition-all duration-200;
   }
 }
