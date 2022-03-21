@@ -16,19 +16,23 @@ function Banner() {
     }
     fetchData();
   }, []);
-  console.log(movie);
   return (
-    // className={`bg-[url('https://image.tmdb.org/t/p/original/${movie?.backdrop_path}')] object-contain text-white bg-cover bg-center h-[448px] relative`}
-    <main className="bg-[url('https://ozosoftindia.com/wp-content/uploads/2021/11/Netflix.jpg')] object-contain text-white bg-cover bg-center h-[448px] relative">
+    <main
+      style={{
+        backgroundImage: `url('https://image.tmdb.org/t/p/original/${movie?.backdrop_path}')`,
+      }}
+      className={`object-contain text-white bg-cover bg-top h-[448px] relative`}
+    >
       <div className="ml-7 pt-[180px]">
-        <h1 className="text-4xl font-semibold pb-2">Movie Name</h1>
+        <h1 className="text-4xl font-semibold pb-3">
+          {movie?.title || movie?.name || movie?.original_name}
+        </h1>
         <div>
           <button className="btn">PLAY</button>
           <button className="btn">MY LIST</button>
         </div>
-        <h1 className="w-full max-w-xl mt-4 text-lg leading-10 truncate">
-          This is a test description This is a test description This is a test
-          description This is a test description This is a test description
+        <h1 className="w-full max-w-xl mt-4 text-lg leading-loose antialiased tracking-wide">
+          {movie?.overview.slice(0, 180)}...
         </h1>
       </div>
       <div className="h-28 rotate-180 to-transparent bg-gradient-to-b from-light absolute bottom-0 w-screen" />
