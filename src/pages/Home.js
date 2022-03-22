@@ -6,7 +6,7 @@ import Row from "../components/Row";
 
 function Home() {
   return (
-    <main className="overflow-x-hidden">
+    <main className="overflow-x-hidden bg-dark">
       <Navbar />
       <Banner />
       <Row
