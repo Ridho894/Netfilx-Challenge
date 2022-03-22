@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Logo from "../assets/netflix-logo-png.png";
 
 function Navbar() {
   const [show, setShow] = useState(false);
@@ -22,7 +23,7 @@ function Navbar() {
       <div className="flex justify-between py-4 max-w-7xl mx-auto">
         <img
           className="w-20 object-contain cursor-pointer"
-          src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
+          src={Logo}
           alt=".img"
         />
         <img

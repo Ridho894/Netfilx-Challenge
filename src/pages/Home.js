@@ -1,6 +1,7 @@
 import React from "react";
 import requests from "../api/requests";
 import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Row from "../components/Row";
 
@@ -12,7 +13,6 @@ function Home() {
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
-        isLargeRow
       />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} isLargeRow />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} isLargeRow />
@@ -41,6 +41,7 @@ function Home() {
         fetchUrl={requests.fetchDocumentaries}
         isLargeRow
       />
+      <Footer />
     </main>
   );
 }
